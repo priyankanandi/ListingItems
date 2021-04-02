@@ -1,9 +1,7 @@
 # ListingItems
 
 
-List Component uses `memo` a react hooks feature to render then WrappedListComponent
-Which basically list the item from the items and passes props like text, selected item and index to another function called SingleListItem
-with memo WrappedSingleListItem to view the listed items as a list and on click of each list item, The selected item should be highlighted with green color.
+List Component uses `memo` a react hooks feature to render the WrappedListComponent Which basically lists the item from the items and passes props like text, selected item and index to another functional component called SingleListItem with memo WrappedSingleListItem to view the listed items and on clicking the single list item, The selected item should be highlighted with green color.
 
 Problem and warnings.  
 1. Check item length before performing items.map function (need to check the length of a list).
