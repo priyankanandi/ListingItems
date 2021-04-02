@@ -26,16 +26,19 @@ const WrappedListComponent = ({ items }) => {
       )}
       <ul>
         {hasItems ? (
-          items.map((item, index) => (
-            <div key={index}>
-              <SingleListItem
-                onClickHandler={(index) => handleClick(index)}
-                text={item.text}
-                index={index}
-                isSelected={selectedIndex}
-              />
-            </div>
-          ))
+          items.map((item, index) => {
+            return (
+              <div key={index}>
+                <SingleListItem
+                  onClickHandler={(index) => handleClick(index)}
+                  text={item.text}
+                  index={index}
+                  selectedIndex={selectedIndex}
+                  isSelected={selectedIndex || selectedIndex === 0}
+                />
+              </div>
+            );
+          })
         ) : (
           <>No Item Found</>
         )}
