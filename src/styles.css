@@ -1,0 +1,45 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.margin5 {
+  margin: 5px;
+}
+
+.padding5 {
+  padding: 5px;
+}
+
+.color-white {
+  color: white;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.bgcolor-green {
+  background: green;
+}
+
+.bgColor-orangered {
+  background: orangered;
+}
+
+.buttonClass {
+  padding: 10px;
+  border-radius: 6px;
+}
